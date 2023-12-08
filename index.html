@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>App Note</title>
+</head>
+<body>
+    <h1>Capture your thoughts!</h1>
+    <div id="app">
+        <div id="notes-container"></div>
+        <form id="note-form">
+            <label for="note-content">Note Content:</label>
+            <textarea id="note-content" rows="6" required></textarea>
+            <label for="note-color">Color:</label>
+            <select id="note-color">
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+            </select>
+            <button type="button" onclick="saveNote()">Save</button>
+        </form>
+    </div>
+
+    <script src="funtion.js"></script>
+</body>
+</html>
